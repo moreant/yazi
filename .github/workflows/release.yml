@@ -17,7 +17,7 @@ jobs:
           - target: aarch64-unknown-linux-musl
             image: rust-musl-cross:aarch64-musl
           - target: armv7-unknown-linux-musleabihf
-            image: rust-musl-cross:aarmv7-musleabihf
+            image: rust-musl-cross:armv7-musleabihf
     container:
       image: docker://ghcr.io/rust-cross/${{ matrix.image }}
     steps:
